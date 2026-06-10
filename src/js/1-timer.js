@@ -27,6 +27,8 @@ const options = {
         message: 'Please choose a date in the future',
         position: 'topRight',
       });
+      button.disabled = true;
+      userSelectedDate = null;
     } else {
       userSelectedDate = selectedDates[0];
       button.disabled = false;
